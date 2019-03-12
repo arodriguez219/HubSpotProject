@@ -86,10 +86,10 @@
                  'hs_context': JSON.stringify({
                       "hutk": req.cookies.hubspotutk,
                       "ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
-                      "pageUrl": "http://www.example.com/form-page",
+                      "pageUrl": "https://arodriguez219.github.io/HubSpotProject/",
                       "pageName": "Request Demo"
                   })
-
+                });
 
               // set the post options, changing out the HUB ID and FORM GUID variables.
 
@@ -126,9 +126,23 @@
 
       </script>
 
-      <!-- Start of HubSpot Embed Code -->
-      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5578497.js"></script>
-      <!-- End of HubSpot Embed Code -->
+          <!-- Set up the path for the initial page view -->
+            <script>
+            var _hsq = window._hsq = window._hsq || [];
+            _hsq.push(['setPath', '/home']);
+            </script>
+
+
+        <!-- Start of HubSpot Embed Code -->
+          <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5578497.js"></script>
+          <!-- End of HubSpot Embed Code -->
+
+          <!-- Tracking subsequent page views -->
+          <script>
+              var _hsq = window._hsq = window._hsq || [];
+              _hsq.push(['setPath', '/about-us']);
+              _hsq.push(['trackPageView']);
+          </script>
 
     </body>
 
