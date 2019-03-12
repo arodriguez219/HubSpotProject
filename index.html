@@ -12,7 +12,7 @@
     <style> body {padding: 0; margin: 0;} </style>
 
 
-    <!--<script src="form.js" type = "text/javascript"></script>-->
+    <script src="rs.js" type = "text/javascript"></script>
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     </head>
     <body>
@@ -62,7 +62,6 @@
 
         </div>
       </div>
-    <div id = "canvasHolder"></div>
 
 
       <script>
@@ -73,7 +72,7 @@
 
               //require Node modules
 
-            /*  var https = require('https');
+              var https = require('https');
               var querystring = require('querystring');
 
               // build the data object
@@ -95,7 +94,7 @@
 
               var options = {
               	hostname: 'forms.hubspot.com',
-              	path: '/uploads/form/v2/5578497/d122bb35-8854-430b-8411-82e7556978ac',
+              	path: '/uploads/form/v2/5578497/',
               	method: 'POST',
               	headers: {
               		'Content-Type': 'application/x-www-form-urlencoded',
@@ -121,20 +120,22 @@
               // post the data
 
               request.write(postData);
-              request.end(); */
+              request.end();
 
 
       </script>
 
           <!-- Set up the path for the initial page view -->
             <script>
+            var url = 'https://track.hubspot.com/v1/event?_n=000000001625&_a=5578497&email=testingapis@hubspot.com'
             var _hsq = window._hsq = window._hsq || [];
             _hsq.push(['setPath', '/home']);
             </script>
 
 
         <!-- Start of HubSpot Embed Code -->
-          <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5578497.js"></script>
+          <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5578497.js">
+          </script>
           <!-- End of HubSpot Embed Code -->
 
           <!-- Tracking subsequent page views -->
