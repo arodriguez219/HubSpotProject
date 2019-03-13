@@ -62,23 +62,60 @@
                   <label for="formLastNameInput">Last Name</label>
                   <input type="text" class="form-control" id="formLastNameInput" placeholder="Ex: Smith">
                 </div>
+                <div class = "text-right">
+                <input type ="submit" name="Submit1" value = "Submit" class="btn btn-primary" id="subBut"></input>
+                <input type="reset" class= "btn btn-primary" value="Reset"></input>
+              </div>
               </form>
             </div>
           </div>
-          <div class = "text-right">
-          <input type ="submit" name="Submit1" value = "Submit" class="btn btn-primary" id="subBut"></input>
-          <input type="reset" class= "btn btn-primary" value="Reset"></input>
-        </div>
+
           <div class="card-footer border-dark mb-3">
           <img src="https://www.northeastern.edu/levelblog/wp-content/uploads/2018/07/hubspot-graphic.png" class="card-img-top" alt="hubspot">
             </div>
 
+
         </div>
       </div>
       </div>
+            <script>
+                  <?php
+                      $submit = $_POST['submit'];
+                      $reset = $_POST['reset'];
+
+                        if ($submit) {
+                            submit();
+                            }
+
+                        if ($reset) {
+                            reset();
+                            }
+
+                            else {
+                              echo 'press Submit button after entering your information...';
+                            }
+                            ?>
+      </script>
+      <script>
+
+                      <?php
+                          function reset() {
+                          echo 'you pressed the [reset] button';
+                          exit;
+                          }
+
+                          function submit() {
+                            echo 'Thank you!';
+                            exit;
+                          }
+                      ?>
+
+            </script>
 
 
 
-    </body>
+        </body>
+
+    </html>
 
     </html>
