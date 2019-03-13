@@ -75,86 +75,15 @@
 
 
 
-          //var form = document.getElementById('theForm');
-          //form.onSubmit = function(event){
-
-
-              //require Node modules
-        /*     var mymod = require('myModule');
-              var https = require('https');
-              var querystring = require('querystring');
-
-              // build the data object
-
-              var postData = querystring.stringify({
-                  'email': req.body.email,
-                  'company':req.body.company,
-                  'firstname': req.body.firstname,
-                  'lastname': req.body.lastname,
-                 'hs_context': JSON.stringify({
-                      "hutk": req.cookies.hubspotutk,
-                      "ipAddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
-                      "pageUrl": "https://arodriguez219.github.io/HubSpotProject/",
-                      "pageName": "Request Demo"
-                  })
-                });
-
-              // set the post options, changing out the HUB ID and FORM GUID variables.
-
-              var options = {
-              	hostname: 'forms.hubspot.com',
-              	path: '/uploads/form/v2/5578497/',
-              	method: 'POST',
-              	headers: {
-              		'Content-Type': 'application/x-www-form-urlencoded',
-              		'Content-Length': postData.length
-              	}
-              }
-
-              // set up the request
-
-              var request = https.request(options, function(response){
-              	console.log("Status: " + response.statusCode);
-              	console.log("Headers: " + JSON.stringify(response.headers));
-              	response.setEncoding('utf8');
-              	response.on('data', function(chunk){
-              		console.log('Body: ' + chunk)
-              	});
-              });
-
-              request.on('error', function(e){
-              	console.log("Problem with request " + e.message)
-              });
-
-              // post the data
-
-              request.write(postData);
-              request.end(); */
 
               document.getElementById("subBut").onclick = function() {
                   _hsq.push(["trackEvent", {
                   id: "Clicked submit button",
 
-    }]);
-};
+                   };
+                };
 
 
-      </script>
-
-          <!-- Set up the path for the initial page view -->
-           <script>
-            var url = 'https://track.hubspot.com/v1/event?_n=000000001625&_a=5578497&email=testingapis@hubspot.com'
-            var _hsq = window._hsq = window._hsq || [];
-            _hsq.push(['setPath', '/home']);
-            </script>
-
-
-
-          <!-- Tracking subsequent page views -->
-         <script>
-              var _hsq = window._hsq = window._hsq || [];
-              _hsq.push(['setPath', '/about-us']);
-              _hsq.push(['trackPageView']);
           </script>
 
     </body>
